@@ -1,0 +1,105 @@
+.news-inner{
+    display: grid;background: linear-gradient(to top,$lightColor,white);
+    grid-template-columns: repeat(8,auto);
+    grid-template-rows: repeat(2,450px) ;
+    padding:5%;
+    grid-gap: 20px;
+    @media(max-width:980px){
+        grid-template-rows: repeat(2,350px) ;
+    }
+    @media(max-width:767px){
+        grid-template-rows: repeat(5,350px) ;
+    }
+
+    .portfolio{
+        display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10%;
+    a{
+        text-decoration: none;color: white;background-color: $mainColor;padding: 3% 5%;transition: .5s;
+        &:hover{
+            background-color: white;color:$darkColor;
+        }
+       }
+       h5{
+        color: white;
+        text-transform: capitalize;
+       }
+       h3{
+        color: white;
+        text-transform: capitalize;
+        font-size: 35px;
+        margin: 1% 0 8%;
+        @media(max-width:767px){
+            font-size:25px;
+        }
+       }
+    }
+    .n1{
+        grid-row: span 1;
+    grid-column:span 4;
+    background: linear-gradient(to bottom right,rgba(0, 0, 0, 0.589),rgba(255, 255, 255, 0.247)),url("../img/architect.jpg") no-repeat;background-size: cover;
+    }
+    .n2{
+        grid-row: span 1;
+    grid-column:span 4;
+    background: linear-gradient(to bottom right,rgba(0, 0, 0, 0.589),rgba(255, 255, 255, 0.247)),url("../img/fjords.jpg") no-repeat;background-size: cover;
+    }
+    .n3{
+        grid-row: span 1;
+    grid-column:span 4;
+    background: linear-gradient(to bottom right,rgba(0, 0, 0, 0.589),rgba(255, 255, 255, 0.247)),url("../img/sunglasses-car-keys.jpg") no-repeat;background-size: cover;
+
+    }
+    .n4{
+        grid-row: span 1;
+    grid-column:span 2;
+    background: linear-gradient(to bottom right,rgba(0, 0, 0, 0.589),rgba(255, 255, 255, 0.247)),url("../img/sailboat.jpg") no-repeat;background-size: cover;
+    }
+    .n5{
+        grid-row: span 1;
+    grid-column:span 2;
+    background: linear-gradient(to bottom right,rgba(0, 0, 0, 0.589),rgba(255, 255, 255, 0.247)),url("../img/thumb-10.jpg") no-repeat;background-size: cover;
+
+    }
+   
+}
+.news{
+    text-align: center;
+    h2{
+        padding: 0;
+        span{
+            color:$mainColor;
+        }
+    }
+    p{
+       opacity: 0.7;margin-top: 30px;
+    }
+}
+
+@media(max-width:767px){
+    .news-inner{
+        .n1{
+            grid-row: span 1;
+            grid-column:span 8;  
+        }
+        .n2{
+            grid-row: span 1;
+            grid-column:span 8;  
+        }
+        .n3{
+            grid-row: span 1;
+            grid-column:span 8;  
+        }
+        .n4{
+            grid-row: span 1;
+            grid-column:span 8;  
+        }
+        .n5{
+            grid-row: span 1;
+            grid-column:span 8;  
+        }
+    }
+}

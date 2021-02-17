@@ -1,0 +1,48 @@
+.subscribe{
+    height:100vh;background: linear-gradient(to bottom right,rgba(0, 0, 255, 0.575),rgba(0, 0, 255, 0.233)), url("../img/architect.jpg") no-repeat;background-size: cover;display: flex;align-items:center;justify-content: center;
+    @media(min-width:767px) and (min-height:1000px){
+        height:60vh;
+    }
+    .subscribe-inner{
+        background-color:rgba(255, 255, 255, 0.733);padding:5%;text-align: center;
+        @media(max-width:767px){
+            width:90%;
+        }
+        h3{
+            font-size:25px;color:$darkColor;margin-bottom: 5%;;
+        }
+        p{
+            font-size: 15px;
+            @media(max-width:767px){
+                font-size:13px;
+            }
+        }
+        .form{
+            display: flex;align-items:center;width:100%;height:39px;margin:5% 0;
+            @media(max-width:767px){
+                flex-direction: column;height:120px;justify-content:space-around;
+            }
+            input{
+                display: block;width: 70%;height:100%;border:0.5px solid grey;border-right:none;padding-left: 5%;outline: none;
+                @media(max-width:767px){
+                    border:0.5px solid grey;width:100%;height:40px;
+                }
+            }
+            button{
+                width:30%;height:100%;border:none;background-color: $mainColor;color:white;transition: .5s;
+                &:hover{
+                    background-color: white;color:$darkColor;border:0.5px solid grey;border-left:none;
+                    @media(max-width:767px){
+                        border:0.5px solid grey;
+                    }
+                }
+                @media(max-width:767px){
+                    width:50%;height:40px;
+                }
+            }
+        }
+       .p{
+        font-size: 12px;opacity: 0.7;font-style: oblique;
+       }
+    }
+}

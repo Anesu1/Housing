@@ -1,0 +1,45 @@
+
+.contact{
+	background-color: #161F23;  padding:8% 6%;color:white;
+	h4{
+	   color: white;font-size: 25px;margin-bottom: 26px;font-weight: bold;
+	}
+	.contact-about{
+		p{
+		   color:#999999;font-size: 15px;line-height: 1.8;
+		}
+	}
+	.contact-inner{
+		margin:6% 0;
+		.contact-info{
+		   i{
+			   position: absolute;color:$mainColor;
+		   }
+		   p{
+			   margin-left:30px;color:#999999;margin-bottom: 15px;line-height:1.8;font-size:15px;
+		   }
+		   h5{
+			   font-size:16px;margin-bottom:10px;margin-left: 30px;
+		   }
+		}
+	}
+	.contact-news{
+		p{
+		   color: #999999;
+		   font-size: 15px;
+		   line-height: 1.8;margin:10% 0;
+		}
+		.links{
+			display:flex;justify-content: space-between;width:65%;
+			a{
+				i{
+					color:white;transition:all .2s ease-out;
+					&:hover{
+						   color:$mainColor;transform: rotate(360deg);
+					}
+				}
+			}
+		}
+	}
+
+}
